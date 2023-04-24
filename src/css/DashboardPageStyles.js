@@ -117,6 +117,10 @@ export const DashboardUserView = styled.div`
 export const DashboardSalesOverview = styled.div`
   padding: 100px 32px 0 32px;
 
+  @media (min-width: 768px) and (max-width: 1280px) {
+    padding: 50px 32px 0 32px;
+  }
+
   h2 {
     //styleName: Heading - General Sans/H5 - Small/Medium;
     font-family: 'Open Sans', sans-serif;
@@ -133,6 +137,11 @@ export const DashboardSalesOverview = styled.div`
     align-items: center;
     justify-content: space-between;
 
+    @media (min-width: 320px) and (max-width: 1280px) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
     .black__theme {
       background-color: #000000;
 
@@ -146,6 +155,10 @@ export const DashboardSalesOverview = styled.div`
       height: 320px;
       width: 290px;
       border-radius: 8px;
+
+      @media (min-width: 768px) and (max-width: 1280px) {
+        width: 100%;
+      }
 
       .chart {
         width: 100%;
@@ -185,9 +198,9 @@ export const DashboardGraphView = styled.div`
   gap: 1.2rem;
   margin: 2rem;
 
-  @media (min-width: 320px) and (max-width: 767px) {
+  @media (min-width: 320px) and (max-width: 1280px) {
     flex-direction: column;
-    /* margin: 2rem 1rem; */
+    gap: 0.5rem;
   }
 
   h4 {
@@ -198,11 +211,20 @@ export const DashboardGraphView = styled.div`
     width: 70%;
     margin-top: 50px;
 
+    @media (min-width: 320px) and (max-width: 1280px) {
+      width: 100%;
+      margin-top: 25px;
+    }
+
     .app__salesGraphContent {
       display: flex;
       align-items: center;
       justify-content: space-between;
       margin-bottom: 0.1rem;
+
+      @media (min-width: 320px) and (max-width: 767px) {
+        display: none;
+      }
 
       .divider {
         border: 1px solid #0000001a;
@@ -224,6 +246,10 @@ export const DashboardGraphView = styled.div`
         border: 1px solid #ededed;
         border-radius: 8px;
         outline: none;
+
+        @media (min-width: 768px) and (max-width: 1280px) {
+          width: 200px;
+        }
       }
 
       .download__btn {
@@ -314,6 +340,16 @@ export const KlashaCard = styled.div`
   background-color: #ef2c5a;
   background-blend-mode: overlay;
   position: relative;
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  @media (min-width: 768px) and (max-width: 1280px) {
+    width: 50%;
+    padding: 1rem;
+  }
 
   .app__klashaCard {
     width: 200px;
