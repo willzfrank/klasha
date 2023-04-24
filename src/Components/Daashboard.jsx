@@ -1,8 +1,11 @@
 import React from 'react';
-import user from '../assets/L.png';
-import dropdown from '../assets/drop down.png';
-import download from '../assets/Vector.png';
-import lines from '../assets/lines.png';
+
+import ApexChart from './StaffChart';
+import Lines from '../assets/lines.png';
+import User from '../assets/L.png';
+import Dropdown from '../assets/drop down.png';
+import Download from '../assets/Vector.png';
+import WeekChart from './WeekChart';
 
 import {
   DashboardView,
@@ -12,8 +15,6 @@ import {
   DashboardGraphView,
   KlashaCard,
 } from '../css/DashboardPageStyles';
-import ApexChart from './StaffChart';
-import AttendanceChart from './AttendanceChart';
 
 const Daashboard = () => {
   return (
@@ -21,12 +22,12 @@ const Daashboard = () => {
       <DashboardNavView>
         <DashboardUserView>
           <div className="app__user">
-            <img src={user} alt="" />
-            <img src={dropdown} alt="" />
+            <img src={User} alt="" />
+            <img src={Dropdown} alt="" className="dropdown_icon" />
           </div>
           <div className="app__user">
             <p>En</p>
-            <img src={dropdown} alt="" />
+            <img src={Dropdown} alt="" className="dropdown_icon" />
           </div>
         </DashboardUserView>
       </DashboardNavView>
@@ -39,18 +40,22 @@ const Daashboard = () => {
               <p className="sales__amount">₦1,652.50</p>
             </div>
           </div>
-          <div className="sales__card">
+          <div className="sales__card black__theme">
             <div>
-              <p className="today__sales">24 Aug - 01 Sep 21</p>
-              <span>CHART HERE</span>
-              <p className="today__sales">This week</p>
-              <p className="sales__amount">₦1,652.50</p>
+              <p className="today__sales white__color">24 Aug - 01 Sep 21</p>
+              <div className="chart">
+                <WeekChart />
+              </div>
+              <p className="today__sales white__color">This week</p>
+              <p className="sales__amount white__color">₦1,652.50</p>
             </div>
           </div>
           <div className="sales__card">
             <div>
               <p className="today__sales">24 Aug - 01 Sep 21</p>
-              {/* <AttendanceChart /> */}
+              <div className="chart">
+                <WeekChart />
+              </div>
               <p className="today__sales">This month</p>
               <p className="sales__amount">₦1,652.50</p>
             </div>
@@ -58,7 +63,9 @@ const Daashboard = () => {
           <div className="sales__card">
             <div>
               <p className="today__sales">24 Aug - 01 Sep 21</p>
-              <span>CHART HERE</span>
+              <div className="chart">
+                <WeekChart />
+              </div>
               <p className="today__sales">Last month</p>
               <p className="sales__amount">₦1,652.50</p>
             </div>
@@ -79,8 +86,8 @@ const Daashboard = () => {
             <select name="" id="" className="email__option">
               <option value="Email">Email</option>
             </select>
-            <div className="download__btn">
-              <img src={download} alt="" />
+            <div className="download__btn dropdown_icon">
+              <img src={Download} alt="" />
               download report
             </div>
           </div>
@@ -92,9 +99,9 @@ const Daashboard = () => {
         <KlashaCard>
           <div className="app__klashaCard">
             <h2>KlashaWire - send money to businesses globally from Africa</h2>
-            <button>Send a Wire</button>
+            <button className="dropdown_icon">Send a Wire</button>
             <div className="image__klasha">
-              <img src={lines} alt="" />
+              <img src={Lines} alt="" />
             </div>
           </div>
         </KlashaCard>

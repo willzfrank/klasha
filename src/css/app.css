@@ -20,16 +20,6 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.nav__link {
-  /* display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: inherit;
-    font-size: inherit; */
-  /* color: #0a0a0a !important; */
-  /* text-decoration: none; */
-}
-
 .active {
   transition: 0.2s ease-in-out;
   cursor: pointer;
@@ -89,63 +79,6 @@ body::-webkit-scrollbar {
   overflow-y: auto;
 }
 
-/* Table */
-
-.pause {
-  color: #60d338;
-  font-size: 20px;
-}
-
-.play {
-  color: #f2a632;
-  font-size: 20px;
-}
-
-.stop {
-  color: #f16063;
-  font-size: 20px;
-}
-
-.title__table {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 2.5rem;
-  padding-top: 1rem;
-  color: #425466;
-}
-
-.progress__barview {
-  text-align: left;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  color: #b1bccb;
-}
-
-.progress__barview .uil {
-  cursor: pointer;
-}
-
-progress {
-  appearance: none;
-  width: 100%;
-  height: 6px;
-  border: none;
-  border-radius: 6px;
-  background-color: #ddd;
-}
-
-progress::-webkit-progress-bar {
-  border-radius: 6px;
-  background-color: #ddd;
-}
-
-progress::-webkit-progress-value {
-  border-radius: 6px;
-  background-color: #f2a632;
-}
-
 @media (min-width: 769px) and (max-width: 1114px) {
   .left {
     transform: translateX(60%);
@@ -159,4 +92,13 @@ progress::-webkit-progress-value {
     transform: translateX(20%);
     transition: transform 300ms ease-out;
   }
+}
+
+.dropdown_icon {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.dropdown_icon:hover {
+  transform: translateY(-2px);
 }

@@ -133,12 +133,23 @@ export const DashboardSalesOverview = styled.div`
     align-items: center;
     justify-content: space-between;
 
+    .black__theme {
+      background-color: #000000;
+
+      .white__color {
+        color: white !important;
+      }
+    }
+
     .sales__card {
       border: 1px solid #000000;
-      height: 240px;
-      width: 256px;
-      padding: 20px;
+      height: 320px;
+      width: 290px;
       border-radius: 8px;
+
+      .chart {
+        width: 100%;
+      }
 
       .today__sales {
         font-family: Inter;
@@ -149,6 +160,7 @@ export const DashboardSalesOverview = styled.div`
         text-align: left;
         margin-bottom: 5px;
         color: #000000;
+        padding: 10px 20px;
       }
 
       .sales__amount {
@@ -160,6 +172,7 @@ export const DashboardSalesOverview = styled.div`
         letter-spacing: -0.02em;
         text-align: left;
         color: #000000;
+        padding: 5px 20px;
       }
     }
   }
