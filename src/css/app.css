@@ -69,7 +69,7 @@ body::-webkit-scrollbar {
 }
 
 .right {
-  transform: translateX(100%);
+  transform: translateX(120%);
   /* right: 0; */
   transition: transform 300ms ease-out;
 }
@@ -77,6 +77,16 @@ body::-webkit-scrollbar {
 .mobilenav-listview {
   height: 100vh;
   overflow-y: auto;
+}
+
+.mobilenav-listview::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge add Firefox */
+.mobilenav-listview {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
 }
 
 @media (min-width: 768px) and (max-width: 1114px) {
@@ -88,7 +98,7 @@ body::-webkit-scrollbar {
 
 @media (min-width: 320px) and (max-width: 767px) {
   .left {
-    transform: translateX(20%);
+    transform: translateX(30%);
     transition: transform 300ms ease-out;
   }
 }

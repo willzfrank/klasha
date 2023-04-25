@@ -26,7 +26,7 @@ export const SidebarLayoutView = styled.div`
     }
 
     .mobile_close_header {
-      width: 38%;
+      /* width: 38%; */
       cursor: pointer;
       font-size: 30px;
       display: flex;
@@ -41,7 +41,7 @@ export const SidebarLayoutView = styled.div`
     }
 
     @media (min-width: 320px) and (max-width: 767px) {
-      width: 78%;
+      width: 80%;
     }
 
     &:hover {
