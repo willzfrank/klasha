@@ -34,7 +34,7 @@ const SidebarLayout = ({ children }) => {
     <SidebarLayoutView>
       {isOpen && (
         <div
-          className="overlay overlay_active"
+          className="overlay overlay-active"
           onClick={() => setIsOpen(false)}
         />
       )}

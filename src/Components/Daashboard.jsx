@@ -42,22 +42,22 @@ const Daashboard = () => {
           </div>
           <div className="sales__card">
             <div>
-              <p className="today__sales">24 Aug - 01 Sep 21</p>
+              <p className="today__sales">24 Aug - 02 Sep 21</p>
               <div className="chart">
                 <WeekChart />
               </div>
               <p className="today__sales">This month</p>
-              <p className="sales__amount">₦1,652.50</p>
+              <p className="sales__amount">₦1,662.50</p>
             </div>
           </div>
           <div className="sales__card">
             <div>
-              <p className="today__sales">24 Aug - 01 Sep 21</p>
+              <p className="today__sales">23 Aug - 03 Sep 21</p>
               <div className="chart">
                 <WeekChart />
               </div>
               <p className="today__sales">Last month</p>
-              <p className="sales__amount">₦1,652.50</p>
+              <p className="sales__amount">₦1,672.50</p>
             </div>
           </div>
         </div>

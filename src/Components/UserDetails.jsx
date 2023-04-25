@@ -8,11 +8,11 @@ const UserDetails = () => {
     <DashboardUserView>
       <div className="app__user">
         <img src={User} alt="" className="user__img" />
-        <img src={Dropdown} alt="" className="dropdown_icon" />
+        <img src={Dropdown} alt="" className="dropdown-icon" />
       </div>
       <div className="app__user">
         <p>En</p>
-        <img src={Dropdown} alt="" className="dropdown_icon" />
+        <img src={Dropdown} alt="" className="dropdown-icon" />
       </div>
     </DashboardUserView>
   );
