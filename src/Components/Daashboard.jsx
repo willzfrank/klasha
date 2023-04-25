@@ -2,34 +2,24 @@ import React from 'react';
 
 import ApexChart from './StaffChart';
 import Lines from '../assets/lines.png';
-import User from '../assets/L.png';
-import Dropdown from '../assets/drop down.png';
+
 import Download from '../assets/Vector.png';
 import WeekChart from './WeekChart';
 
 import {
   DashboardView,
   DashboardNavView,
-  DashboardUserView,
   DashboardSalesOverview,
   DashboardGraphView,
   KlashaCard,
 } from '../css/DashboardPageStyles';
+import UserDetails from './UserDetails';
 
 const Daashboard = () => {
   return (
     <DashboardView>
       <DashboardNavView>
-        <DashboardUserView>
-          <div className="app__user">
-            <img src={User} alt="" />
-            <img src={Dropdown} alt="" className="dropdown_icon" />
-          </div>
-          <div className="app__user">
-            <p>En</p>
-            <img src={Dropdown} alt="" className="dropdown_icon" />
-          </div>
-        </DashboardUserView>
+        <UserDetails />
       </DashboardNavView>
       <DashboardSalesOverview>
         <h2>Sales Overview</h2>
