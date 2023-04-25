@@ -25,6 +25,11 @@ export const LogoView = styled.div`
   align-items: center;
   margin-left: 1rem;
   padding-bottom: 52px;
+
+  img {
+    width: 83px;
+    height: 24px;
+  }
 `;
 
 export const ListView = styled.ul`

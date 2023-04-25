@@ -7,7 +7,7 @@ const UserDetails = () => {
   return (
     <DashboardUserView>
       <div className="app__user">
-        <img src={User} alt="" />
+        <img src={User} alt="" className="user__img" />
         <img src={Dropdown} alt="" className="dropdown_icon" />
       </div>
       <div className="app__user">

@@ -76,7 +76,7 @@ const Daashboard = () => {
             <select name="" id="" className="email__option">
               <option value="Email">Email</option>
             </select>
-            <div className="download__btn dropdown_icon">
+            <div className="download__btn ">
               <img src={Download} alt="" />
               download report
             </div>
@@ -89,7 +89,7 @@ const Daashboard = () => {
         <KlashaCard>
           <div className="app__klashaCard">
             <h2>KlashaWire - send money to businesses globally from Africa</h2>
-            <button className="dropdown_icon">Send a Wire</button>
+            <button className="klasha__btn">Send a Wire</button>
             <div className="image__klasha">
               <img src={Lines} alt="" />
             </div>

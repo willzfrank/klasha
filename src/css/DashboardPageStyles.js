@@ -106,6 +106,11 @@ export const DashboardUserView = styled.div`
     justify-content: center;
     gap: 6px;
 
+    .user__img {
+      width: 27px;
+      height: 27px;
+    }
+
     p {
       //styleName: Paragraph - Inter/P3/Semi Bold;
       font-family: Inter;
@@ -271,6 +276,16 @@ export const DashboardGraphView = styled.div`
         line-height: 16px;
         letter-spacing: 0em;
         text-align: center;
+        cursor: pointer;
+
+        &:hover {
+          transform: translateY(-2px);
+        }
+
+        img {
+          width: 12px;
+          height: 12px;
+        }
       }
 
       h2 {
@@ -313,6 +328,11 @@ export const DashboardGraphView = styled.div`
 
 export const MobileNavbar = styled.nav`
   display: none;
+
+  img {
+    width: 83px;
+    height: 24px;
+  }
 
   .uil-bars {
     cursor: pointer;
@@ -363,11 +383,23 @@ export const KlashaCard = styled.div`
     flex-direction: column;
     height: 100%;
 
+    .klasha__btn {
+      cursor: pointer;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
     .image__klasha {
       position: absolute;
       top: 0;
       width: 100%;
       left: 0;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
     }
 
     button {
