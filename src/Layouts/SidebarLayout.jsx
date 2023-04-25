@@ -3,6 +3,7 @@ import Logo from '../assets/klasha__logo 1.png';
 
 import { SidebarLayoutView, MobileNavbar } from '../css/DashboardPageStyles';
 import { ListView } from '../css/SidebarStyles';
+import { Link } from 'react-router-dom';
 
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -52,8 +53,10 @@ const SidebarLayout = ({ children }) => {
               onClick={() => handleListItemClick(0)}
               className={activeIndex === 0 ? 'active' : ''}
             >
-              <FontAwesomeIcon icon={faChartPie} />
-              <span>Dashboard</span>
+              <Link to="/" className="nav__link">
+                <FontAwesomeIcon icon={faChartPie} />
+                <span>Dashboard</span>
+              </Link>
             </li>
             <li
               onClick={() => handleListItemClick(1)}
@@ -65,7 +68,9 @@ const SidebarLayout = ({ children }) => {
               onClick={() => handleListItemClick(2)}
               className={activeIndex === 2 ? 'active' : ''}
             >
-              <i className="uil uil-sorting"></i> <span>Transaction</span>
+              <Link to="/transaction" className="nav__link">
+                <i className="uil uil-sorting"></i> <span>Transaction</span>
+              </Link>
             </li>
             <li
               className={`messages-view ${activeIndex === 3 ? 'active' : ''}`}

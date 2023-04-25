@@ -35,13 +35,17 @@ export const SidebarLayoutView = styled.div`
       color: #ef2c5a;
       transition: color 0.3s ease-in-out;
 
-      @media (min-width: 320px) and (max-width: 768px) {
-        width: 78%;
+      @media (min-width: 768px) and (max-width: 1114px) {
+        width: 35%;
       }
+    }
 
-      &:hover {
-        color: #a0aec0;
-      }
+    @media (min-width: 320px) and (max-width: 767px) {
+      width: 78%;
+    }
+
+    &:hover {
+      color: #a0aec0;
     }
   }
 `;

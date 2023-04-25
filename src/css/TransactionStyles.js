@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const TransactionTable = styled.section`
   padding: 100px 32px 0 32px;
 
-  @media (min-width: 768px) and (max-width: 1280px) {
-    padding: 50px 32px 0 32px;
+  @media (min-width: 320px) and (max-width: 1280px) {
+    padding: 50px 32px 30px 32px;
   }
 
   .transaction__table {
@@ -29,6 +29,12 @@ export const TransactionTable = styled.section`
     justify-content: space-between;
     padding: 12px;
     border-bottom: 1px solid #f0f0f0;
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
 
     .right__filter {
       display: flex;
@@ -62,9 +68,18 @@ export const TransactionTable = styled.section`
       border: 1px solid #ededed;
       padding: 10px 15px;
       border-radius: 8px;
+      @media (min-width: 320px) and (max-width: 767px) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
       input {
         border: none;
         outline: none;
+        @media (min-width: 320px) and (max-width: 767px) {
+          width: 90%;
+        }
       }
     }
   }
@@ -94,6 +109,7 @@ export const TableContainer = styled.section`
     justify-content: flex-end;
     padding-right: 24px;
   }
+
   table {
     width: max-content;
     height: 400px;
