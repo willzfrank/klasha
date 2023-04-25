@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="./src/assets/klasha__logo 1.png" alt="Project logo"></a>
+ <img width=192px height=192px src="./public/favicon_io/android-chrome-192x192.png" alt="Project logo"></a>
 </p>
 
 # Klasha Dashboard and Transaction Page
