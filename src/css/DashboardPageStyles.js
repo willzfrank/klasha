@@ -126,8 +126,8 @@ export const DashboardUserView = styled.div`
 export const DashboardSalesOverview = styled.div`
   padding: 100px 32px 0 32px;
 
-  @media (min-width: 768px) and (max-width: 1280px) {
-    padding: 50px 32px 0 32px;
+  @media (min-width: 320px) and (max-width: 1280px) {
+    padding: 10px;
   }
 
   h2 {
@@ -139,6 +139,10 @@ export const DashboardSalesOverview = styled.div`
     letter-spacing: -0.02em;
     text-align: left;
     margin-bottom: 24px;
+
+    @media (min-width: 320px) and (max-width: 1280px) {
+      margin-left: 0.5rem;
+    }
   }
 
   .app__salesOverview {
@@ -164,6 +168,10 @@ export const DashboardSalesOverview = styled.div`
       height: 320px;
       width: 290px;
       border-radius: 8px;
+
+      @media (min-width: 320px) and (max-width: 767px) {
+        width: 95%;
+      }
 
       @media (min-width: 768px) and (max-width: 1280px) {
         width: 100%;
@@ -220,9 +228,16 @@ export const DashboardGraphView = styled.div`
     width: 70%;
     margin-top: 50px;
 
-    @media (min-width: 320px) and (max-width: 1280px) {
+    @media (min-width: 320px) and (max-width: 767px) {
+      width: 110%;
+      /* margin-top: 25px; */
+      margin-top: 0;
+    }
+
+    @media (min-width: 768px) and (max-width: 1280px) {
       width: 100%;
-      margin-top: 25px;
+      /* margin-top: 25px; */
+      margin-top: 0;
     }
 
     .app__salesGraphContent {
@@ -366,7 +381,7 @@ export const KlashaCard = styled.div`
   position: relative;
 
   @media (min-width: 320px) and (max-width: 767px) {
-    width: 100%;
+    width: 110%;
     margin-top: 1rem;
   }
 
