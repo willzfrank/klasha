@@ -27,7 +27,9 @@ const SideBar = () => {
   return (
     <SideBarView>
       <LogoView>
-        <img src={Logo} alt="logo" />
+        <Link to="/" className="nav__link">
+          <img src={Logo} alt="logo" />
+        </Link>
       </LogoView>
       <div>
         <ListView>

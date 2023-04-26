@@ -39,7 +39,9 @@ const SidebarLayout = ({ children }) => {
         />
       )}
       <MobileNavbar>
-        <img src={Logo} alt="Logo" />
+        <Link to="/">
+          <img src={Logo} alt="Logo" />
+        </Link>
         <i className="uil uil-bars" onClick={toggleMenu} />
       </MobileNavbar>
       <div className={`mobileNavbar ${isOpen ? 'left' : 'right'}`}>
