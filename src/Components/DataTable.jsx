@@ -22,13 +22,14 @@ function DataTable() {
       <table>
         <thead>
           <tr>
-            <TableHeaderCell>Transaction ID</TableHeaderCell>
-            <TableHeaderCell>Source</TableHeaderCell>
-            <TableHeaderCell>Customer name</TableHeaderCell>
-            <TableHeaderCell>Customer email</TableHeaderCell>
-            <TableHeaderCell>Amount</TableHeaderCell>
-            <TableHeaderCell>Request date</TableHeaderCell>
+            <TableHeaderCell>Name</TableHeaderCell>
+            <TableHeaderCell>LeverPay ID</TableHeaderCell>
             <TableHeaderCell>Status</TableHeaderCell>
+            <TableHeaderCell> Amount</TableHeaderCell>
+            <TableHeaderCell>Failed</TableHeaderCell>
+            <TableHeaderCell>Remark</TableHeaderCell>
+            <TableHeaderCell>-</TableHeaderCell>
+            <TableHeaderCell>-</TableHeaderCell>
           </tr>
         </thead>
         <tbody>

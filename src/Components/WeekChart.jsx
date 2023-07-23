@@ -53,7 +53,7 @@ const WeekChart = () => {
       tooltip: {
         enabled: false, // hide tooltip
       },
-      colors: ['#EF2C5A'],
+      colors: ['#b8c7fc'],
     },
   });
 

@@ -5,11 +5,18 @@ export const SideBarView = styled.div`
   overflow-y: auto;
   width: 20%;
   position: relative;
-  padding: 2rem 0;
-  padding-left: 48px;
+  padding: 1rem 0;
+  padding-left: 18px;
   top: 0;
   left: 0;
-  background-color: #fffbf7;
+  background-color: white;
+
+  .sidebar-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 90%;
+  }
 
   @media screen and (max-width: 884px) {
     display: none !important;
@@ -24,17 +31,17 @@ export const LogoView = styled.div`
   display: flex;
   align-items: center;
   margin-left: 1rem;
-  padding-bottom: 52px;
+  padding-bottom: 1.5rem;
 
   img {
-    width: 83px;
-    height: 24px;
+    width: 90%;
+    height: auto;
   }
 `;
 
 export const ListView = styled.ul`
-  padding-bottom: 1rem;
-  padding-top: 0.5rem;
+  /* padding-bottom: 3rem;
+  padding-top: 0.5rem; */
 
   .support__btn {
     margin-left: 18px;
@@ -107,7 +114,7 @@ export const ListView = styled.ul`
     &:hover {
       transition: 0.2s ease-in-out;
       cursor: pointer;
-      color: #ef2c5a !important;
+      color: #7791cd !important;
     }
 
     .nav__link {
@@ -119,7 +126,7 @@ export const ListView = styled.ul`
       color: inherit;
 
       &:hover {
-        color: #ef2c5a !important;
+        color: #7791cd !important;
       }
     }
   }

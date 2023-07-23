@@ -15,7 +15,7 @@ export const SidebarLayoutView = styled.div`
     width: 100%;
     height: 100vh;
     flex-direction: column;
-    background-color: #fffbf7;
+    background-color: white;
     top: 0;
     padding: 1.6em;
     color: black !important;
@@ -26,13 +26,13 @@ export const SidebarLayoutView = styled.div`
     }
 
     .mobile_close_header {
-      /* width: 38%; */
+      margin-bottom: 2rem;
       cursor: pointer;
       font-size: 30px;
       display: flex;
-      align-items: flex-end;
-      justify-content: flex-end;
-      color: #ef2c5a;
+      align-items: center;
+      justify-content: space-between;
+      color: #7791cd;
       transition: color 0.3s ease-in-out;
 
       @media (min-width: 768px) and (max-width: 1114px) {
@@ -56,6 +56,7 @@ export const DashboardView = styled.main`
   width: 100%;
   overflow: scroll;
   height: calc(100vh - 1rem);
+  background-color: #f4f7fe;
 
   &::-webkit-scrollbar {
     display: none;
@@ -68,12 +69,13 @@ export const DashboardView = styled.main`
 
 export const DashboardNavView = styled.nav`
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  padding: 23px 38px 23px 0;
+  align-items: center;
+  z-index: 100;
+  position: sticky;
+  top: 0;
+  right: 0;
+  background-color: #f4f7fe;
   transition: all 0.2s ease-in-out;
-  border-bottom: 1px solid #ededed;
-
   &::-webkit-scrollbar {
     display: none;
   }
@@ -345,8 +347,8 @@ export const MobileNavbar = styled.nav`
   display: none;
 
   img {
-    width: 83px;
-    height: 24px;
+    width: 100%;
+    height: auto;
   }
 
   .uil-bars {
@@ -445,5 +447,20 @@ export const KlashaCard = styled.div`
       text-align: left;
       color: white;
     }
+  }
+`;
+
+export const DashboardBody = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 20px;
+
+  .flex-1 {
+    width: 35%;
+  }
+
+  .flex-2 {
+    width: 65%;
   }
 `;

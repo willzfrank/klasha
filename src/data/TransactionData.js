@@ -6,7 +6,9 @@ const details = [
     customerEmail: 'samanthalee@example.com',
     amount: 200,
     requestDate: '26.08.2021',
-    status: 'successful',
+    status: 'paid',
+    failed: 0,
+    remark: 'successful',
   },
   {
     id: 'GB124QWERTY12350',
@@ -15,7 +17,9 @@ const details = [
     customerEmail: 'davidkim@example.com',
     amount: 150,
     requestDate: '26.08.2021',
-    status: 'pending',
+    failed: 1,
+    status: 'Refund',
+    remark: 'Refund',
   },
   {
     id: 'GB124QWERTY12351',
@@ -24,7 +28,10 @@ const details = [
     customerEmail: 'meganwong@example.com',
     amount: 80,
     requestDate: '27.08.2021',
-    status: 'successful',
+    status: 'paid',
+    failed: 0,
+
+    remark: 'successful',
   },
   {
     id: 'GB124QWERTY12352',
@@ -33,7 +40,9 @@ const details = [
     customerEmail: 'peterchen@example.com',
     amount: 120,
     requestDate: '27.08.2021',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
   {
     id: 'GB124QWERTY12353',
@@ -42,7 +51,10 @@ const details = [
     customerEmail: 'emilypark@example.com',
     amount: 90,
     requestDate: '28.08.2021',
-    status: 'successful',
+    status: 'paid',
+    failed: 0,
+
+    remark: 'successful',
   },
   {
     id: 'GB124QWERTY12354',
@@ -51,7 +63,9 @@ const details = [
     customerEmail: 'alexlee@example.com',
     amount: 70,
     requestDate: '28.08.2021',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
   {
     id: 'GB124QWERTY12355',
@@ -60,7 +74,10 @@ const details = [
     customerEmail: 'jessicachen@example.com',
     amount: 110,
     requestDate: '29.08.2021',
-    status: 'successful',
+    status: 'paid',
+    failed: 0,
+
+    remark: 'successful',
   },
   {
     id: 'GB124QWERTY12356',
@@ -69,7 +86,9 @@ const details = [
     customerEmail: 'danielkim@example.com',
     amount: 60,
     requestDate: '29.08.2021',
-    status: 'pending',
+    failed: 1,
+    status: 'Cancel',
+    remark: 'Cancel',
   },
   {
     id: 'GB124QWERTY12357',
@@ -78,7 +97,10 @@ const details = [
     customerEmail: 'averyliu@example.com',
     amount: 100,
     requestDate: '30.08.2021',
-    status: 'successful',
+    status: 'paid',
+    failed: 0,
+
+    remark: 'successful',
   },
   {
     id: 'GB124QWERTY12358',
@@ -87,7 +109,9 @@ const details = [
     customerEmail: 'lucaspark@example.com',
     amount: 130,
     requestDate: '30.08.2021',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
   {
     id: 'GB124QWERTY12359',
@@ -96,7 +120,10 @@ const details = [
     customerEmail: 'oliviakim@example.com',
     amount: 90,
     requestDate: '31.08.2021',
-    status: 'successful',
+    status: 'paid',
+    failed: 0,
+
+    remark: 'successful',
   },
   {
     id: 'GB124QWERTY12360',
@@ -105,7 +132,9 @@ const details = [
     customerEmail: 'calebchen@example.com',
     amount: 70,
     requestDate: '31.08.2021',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
   {
     id: 'GB124QWERTY12361',
@@ -114,7 +143,10 @@ const details = [
     customerEmail: 'sophiapark@example.com',
     amount: 110,
     requestDate: '01.09.2021',
-    status: 'successful',
+    status: 'paid',
+    failed: 0,
+
+    remark: 'successful',
   },
   {
     id: 'GB124QWERTY12362',
@@ -123,7 +155,9 @@ const details = [
     customerEmail: 'aaronlee@example.com',
     amount: 60,
     requestDate: '01.09.2021',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
   {
     id: 'GB124QWERTY12363',
@@ -132,7 +166,10 @@ const details = [
     customerEmail: 'isabellachen@example.com',
     amount: 100,
     requestDate: '02.09.2021',
-    status: 'successful',
+    status: 'paid',
+    failed: 0,
+
+    remark: 'successful',
   },
   {
     id: 'GB124QWERTY12364',
@@ -141,7 +178,9 @@ const details = [
     customerEmail: 'ethanpark@example.com',
     amount: 130,
     requestDate: '02.09.2021',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
   {
     id: 'GB124QWERTY12365',
@@ -150,7 +189,10 @@ const details = [
     customerEmail: 'chloele@example.com',
     amount: 90,
     requestDate: '03.09.2021',
-    status: 'successful',
+    status: 'paid',
+    failed: 0,
+
+    remark: 'successful',
   },
   {
     id: 'GB124QWERTY12366',
@@ -159,7 +201,9 @@ const details = [
     customerEmail: 'jacobkim@example.com',
     amount: 70,
     requestDate: '03.09.2021',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
   {
     id: 'GB124QWERTY12367',
@@ -168,7 +212,10 @@ const details = [
     customerEmail: 'miachen@example.com',
     amount: 110,
     requestDate: '04.09.2021',
-    status: 'successful',
+    status: 'paid',
+    failed: 0,
+
+    remark: 'successful',
   },
   {
     id: 'GB124QWERTY12368',
@@ -177,7 +224,9 @@ const details = [
     customerEmail: 'noahpark@example.com',
     amount: 60,
     requestDate: '04.09.2021',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
   {
     id: 'GT973UIOKL23187',
@@ -186,7 +235,7 @@ const details = [
     customerEmail: 'aishabello@example.com',
     amount: 120,
     requestDate: '05.09.2021',
-    status: 'completed',
+    remark: 'completed',
   },
 
   {
@@ -196,7 +245,9 @@ const details = [
     customerEmail: 'saniahmed@example.com',
     amount: 230,
     requestDate: '06.09.2021',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
 
   {
@@ -206,7 +257,7 @@ const details = [
     customerEmail: 'ezejohn@example.com',
     amount: 80,
     requestDate: '07.09.2021',
-    status: 'rejected',
+    remark: 'rejected',
   },
 
   {
@@ -216,7 +267,7 @@ const details = [
     customerEmail: 'abdullahihassan@example.com',
     amount: 150,
     requestDate: '08.09.2021',
-    status: 'completed',
+    remark: 'completed',
   },
 
   {
@@ -226,7 +277,9 @@ const details = [
     customerEmail: 'chinyereike@example.com',
     amount: 300,
     requestDate: '09.09.2021',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
 
   {
@@ -236,7 +289,7 @@ const details = [
     customerEmail: 'aliyumusa@example.com',
     amount: 95,
     requestDate: '10.09.2021',
-    status: 'completed',
+    remark: 'completed',
   },
 
   {
@@ -246,7 +299,7 @@ const details = [
     customerEmail: 'fatimaabubakar@example.com',
     amount: 200,
     requestDate: '11.09.2021',
-    status: 'rejected',
+    remark: 'rejected',
   },
 
   {
@@ -256,7 +309,9 @@ const details = [
     customerEmail: 'obinnaokafor@example.com',
     amount: 100,
     requestDate: '12.09.2021',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
 
   {
@@ -266,7 +321,7 @@ const details = [
     customerEmail: 'oluwatobijohnson@example.com',
     amount: 50,
     requestDate: '13.09.2021',
-    status: 'completed',
+    remark: 'completed',
   },
 
   {
@@ -276,7 +331,7 @@ const details = [
     customerEmail: 'maryamyusuf@example.com',
     amount: 120,
     requestDate: '14.09.2021',
-    status: 'rejected',
+    remark: 'rejected',
   },
 
   {
@@ -286,7 +341,7 @@ const details = [
     customerEmail: 'adebisitaiwo@example.com',
     amount: 120,
     requestDate: '14.09.2021',
-    status: 'rejected',
+    remark: 'rejected',
   },
   {
     id: 'GT756KLKMJ23098',
@@ -295,7 +350,7 @@ const details = [
     customerEmail: 'seunadeoye@example.com',
     amount: 200,
     requestDate: '18.10.2021',
-    status: 'approved',
+    remark: 'approved',
   },
 
   {
@@ -305,7 +360,9 @@ const details = [
     customerEmail: 'ifeomaokorie@example.com',
     amount: 80,
     requestDate: '23.11.2021',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
 
   {
@@ -315,7 +372,7 @@ const details = [
     customerEmail: 'emekaibeh@example.com',
     amount: 500,
     requestDate: '30.11.2021',
-    status: 'approved',
+    remark: 'approved',
   },
 
   {
@@ -325,7 +382,9 @@ const details = [
     customerEmail: 'nkechiokafor@example.com',
     amount: 300,
     requestDate: '05.12.2021',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
 
   {
@@ -335,7 +394,7 @@ const details = [
     customerEmail: 'jamesadeyemi@example.com',
     amount: 150,
     requestDate: '11.12.2021',
-    status: 'approved',
+    remark: 'approved',
   },
 
   {
@@ -345,7 +404,7 @@ const details = [
     customerEmail: 'bolaji.afolabi@example.com',
     amount: 50,
     requestDate: '14.12.2021',
-    status: 'rejected',
+    remark: 'rejected',
   },
 
   {
@@ -355,7 +414,9 @@ const details = [
     customerEmail: 'uchenwankwo@example.com',
     amount: 100,
     requestDate: '22.12.2021',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
 
   {
@@ -365,7 +426,7 @@ const details = [
     customerEmail: 'toluogunbiyi@example.com',
     amount: 400,
     requestDate: '25.12.2021',
-    status: 'approved',
+    remark: 'approved',
   },
 
   {
@@ -375,7 +436,7 @@ const details = [
     customerEmail: 'graceadeleke@example.com',
     amount: 75,
     requestDate: '29.12.2021',
-    status: 'rejected',
+    remark: 'rejected',
   },
 
   {
@@ -385,7 +446,7 @@ const details = [
     customerEmail: 'segunakinwale@example.com',
     amount: 250,
     requestDate: '02.01.2022',
-    status: 'approved',
+    remark: 'approved',
   },
   {
     id: 'GT567POIUY34567',
@@ -394,7 +455,9 @@ const details = [
     customerEmail: 'chukwumauche@example.com',
     amount: 75,
     requestDate: '23.04.2023',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
   {
     id: 'PL098LKJH65432',
@@ -403,7 +466,7 @@ const details = [
     customerEmail: 'nnekaonuoha@example.com',
     amount: 50,
     requestDate: '22.04.2023',
-    status: 'approved',
+    remark: 'approved',
   },
   {
     id: 'VF276ZXCDE12678',
@@ -412,7 +475,7 @@ const details = [
     customerEmail: 'topeadelaja@example.com',
     amount: 250,
     requestDate: '21.04.2023',
-    status: 'rejected',
+    remark: 'rejected',
   },
   {
     id: 'CD963POIUY74539',
@@ -421,7 +484,7 @@ const details = [
     customerEmail: 'oluwafemiadeyemi@example.com',
     amount: 80,
     requestDate: '20.04.2023',
-    status: 'approved',
+    remark: 'approved',
   },
   {
     id: 'GT567POIUY34567',
@@ -430,7 +493,9 @@ const details = [
     customerEmail: 'chukwumauche@example.com',
     amount: 75,
     requestDate: '23.04.2023',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
   {
     id: 'PL098LKJH65432',
@@ -439,7 +504,7 @@ const details = [
     customerEmail: 'nnekaonuoha@example.com',
     amount: 50,
     requestDate: '22.04.2023',
-    status: 'approved',
+    remark: 'approved',
   },
   {
     id: 'GT567POIUY34567',
@@ -448,7 +513,9 @@ const details = [
     customerEmail: 'chukwumauche@example.com',
     amount: 75,
     requestDate: '23.04.2023',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
   {
     id: 'GT567POIUY34567',
@@ -457,7 +524,9 @@ const details = [
     customerEmail: 'chukwumauche@example.com',
     amount: 75,
     requestDate: '23.04.2023',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
   {
     id: 'GT567POIUY34567',
@@ -466,7 +535,9 @@ const details = [
     customerEmail: 'chukwumauche@example.com',
     amount: 75,
     requestDate: '23.04.2023',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
   {
     id: 'PL098LKJH65432',
@@ -475,7 +546,7 @@ const details = [
     customerEmail: 'nnekaonuoha@example.com',
     amount: 50,
     requestDate: '22.04.2023',
-    status: 'approved',
+    remark: 'approved',
   },
   {
     id: 'VF276ZXCDE12678',
@@ -484,7 +555,7 @@ const details = [
     customerEmail: 'topeadelaja@example.com',
     amount: 250,
     requestDate: '21.04.2023',
-    status: 'rejected',
+    remark: 'rejected',
   },
   {
     id: 'CD963POIUY74539',
@@ -493,7 +564,7 @@ const details = [
     customerEmail: 'oluwafemiadeyemi@example.com',
     amount: 80,
     requestDate: '20.04.2023',
-    status: 'approved',
+    remark: 'approved',
   },
   {
     id: 'BH349QWERTY24578',
@@ -502,7 +573,9 @@ const details = [
     customerEmail: 'tosinogunlade@example.com',
     amount: 200,
     requestDate: '19.04.2023',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
   {
     id: 'QW098LKJH67890',
@@ -511,7 +584,7 @@ const details = [
     customerEmail: 'funmiadegbite@example.com',
     amount: 150,
     requestDate: '18.04.2023',
-    status: 'rejected',
+    remark: 'rejected',
   },
   {
     id: 'ZC782PLMKJ41923',
@@ -520,7 +593,7 @@ const details = [
     customerEmail: 'tayoadekunle@example.com',
     amount: 300,
     requestDate: '17.04.2023',
-    status: 'approved',
+    remark: 'approved',
   },
   {
     id: 'FG128MNBVC56321',
@@ -529,7 +602,9 @@ const details = [
     customerEmail: 'solabalogun@example.com',
     amount: 50,
     requestDate: '16.04.2023',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
   {
     id: 'RT345LKJH97852',
@@ -538,7 +613,7 @@ const details = [
     customerEmail: 'kemiola@example.com',
     amount: 120,
     requestDate: '15.04.2023',
-    status: 'rejected',
+    remark: 'rejected',
   },
   {
     id: 'XC239PLMKJ67543',
@@ -547,7 +622,7 @@ const details = [
     customerEmail: 'tobiadejumo@example.com',
     amount: 90,
     requestDate: '14.04.2023',
-    status: 'approved',
+    remark: 'approved',
   },
   {
     id: 'PL098LKJH65432',
@@ -556,7 +631,7 @@ const details = [
     customerEmail: 'nnekaonuoha@example.com',
     amount: 50,
     requestDate: '22.04.2023',
-    status: 'approved',
+    remark: 'approved',
   },
   {
     id: 'VF276ZXCDE12678',
@@ -565,7 +640,7 @@ const details = [
     customerEmail: 'topeadelaja@example.com',
     amount: 250,
     requestDate: '21.04.2023',
-    status: 'rejected',
+    remark: 'rejected',
   },
   {
     id: 'CD963POIUY74539',
@@ -574,7 +649,7 @@ const details = [
     customerEmail: 'oluwafemiadeyemi@example.com',
     amount: 80,
     requestDate: '20.04.2023',
-    status: 'approved',
+    remark: 'approved',
   },
   {
     id: 'BH349QWERTY24578',
@@ -583,7 +658,9 @@ const details = [
     customerEmail: 'tosinogunlade@example.com',
     amount: 200,
     requestDate: '19.04.2023',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
   {
     id: 'QW098LKJH67890',
@@ -592,7 +669,7 @@ const details = [
     customerEmail: 'funmiadegbite@example.com',
     amount: 150,
     requestDate: '18.04.2023',
-    status: 'rejected',
+    remark: 'rejected',
   },
   {
     id: 'ZC782PLMKJ41923',
@@ -601,7 +678,7 @@ const details = [
     customerEmail: 'tayoadekunle@example.com',
     amount: 300,
     requestDate: '17.04.2023',
-    status: 'approved',
+    remark: 'approved',
   },
   {
     id: 'FG128MNBVC56321',
@@ -610,7 +687,9 @@ const details = [
     customerEmail: 'solabalogun@example.com',
     amount: 50,
     requestDate: '16.04.2023',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
   {
     id: 'RT345LKJH97852',
@@ -619,7 +698,7 @@ const details = [
     customerEmail: 'kemiola@example.com',
     amount: 120,
     requestDate: '15.04.2023',
-    status: 'rejected',
+    remark: 'rejected',
   },
   {
     id: 'XC239PLMKJ67543',
@@ -628,7 +707,7 @@ const details = [
     customerEmail: 'tobiadejumo@example.com',
     amount: 90,
     requestDate: '14.04.2023',
-    status: 'approved',
+    remark: 'approved',
   },
   {
     id: 'PL098LKJH65432',
@@ -637,7 +716,7 @@ const details = [
     customerEmail: 'nnekaonuoha@example.com',
     amount: 50,
     requestDate: '22.04.2023',
-    status: 'approved',
+    remark: 'approved',
   },
   {
     id: 'VF276ZXCDE12678',
@@ -646,7 +725,7 @@ const details = [
     customerEmail: 'topeadelaja@example.com',
     amount: 250,
     requestDate: '21.04.2023',
-    status: 'rejected',
+    remark: 'rejected',
   },
   {
     id: 'CD963POIUY74539',
@@ -655,7 +734,7 @@ const details = [
     customerEmail: 'oluwafemiadeyemi@example.com',
     amount: 80,
     requestDate: '20.04.2023',
-    status: 'approved',
+    remark: 'approved',
   },
   {
     id: 'BH349QWERTY24578',
@@ -664,7 +743,9 @@ const details = [
     customerEmail: 'tosinogunlade@example.com',
     amount: 200,
     requestDate: '19.04.2023',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
   {
     id: 'QW098LKJH67890',
@@ -673,7 +754,7 @@ const details = [
     customerEmail: 'funmiadegbite@example.com',
     amount: 150,
     requestDate: '18.04.2023',
-    status: 'rejected',
+    remark: 'rejected',
   },
   {
     id: 'ZC782PLMKJ41923',
@@ -682,7 +763,7 @@ const details = [
     customerEmail: 'tayoadekunle@example.com',
     amount: 300,
     requestDate: '17.04.2023',
-    status: 'approved',
+    remark: 'approved',
   },
   {
     id: 'FG128MNBVC56321',
@@ -691,7 +772,9 @@ const details = [
     customerEmail: 'solabalogun@example.com',
     amount: 50,
     requestDate: '16.04.2023',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
   {
     id: 'RT345LKJH97852',
@@ -700,7 +783,7 @@ const details = [
     customerEmail: 'kemiola@example.com',
     amount: 120,
     requestDate: '15.04.2023',
-    status: 'rejected',
+    remark: 'rejected',
   },
   {
     id: 'XC239PLMKJ67543',
@@ -709,7 +792,7 @@ const details = [
     customerEmail: 'tobiadejumo@example.com',
     amount: 90,
     requestDate: '14.04.2023',
-    status: 'approved',
+    remark: 'approved',
   },
   {
     id: 'VF276ZXCDE12678',
@@ -718,7 +801,7 @@ const details = [
     customerEmail: 'topeadelaja@example.com',
     amount: 250,
     requestDate: '21.04.2023',
-    status: 'rejected',
+    remark: 'rejected',
   },
   {
     id: 'CD963POIUY74539',
@@ -727,7 +810,7 @@ const details = [
     customerEmail: 'oluwafemiadeyemi@example.com',
     amount: 80,
     requestDate: '20.04.2023',
-    status: 'approved',
+    remark: 'approved',
   },
   {
     id: 'BH349QWERTY24578',
@@ -736,7 +819,9 @@ const details = [
     customerEmail: 'tosinogunlade@example.com',
     amount: 200,
     requestDate: '19.04.2023',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
   {
     id: 'QW098LKJH67890',
@@ -745,7 +830,7 @@ const details = [
     customerEmail: 'funmiadegbite@example.com',
     amount: 150,
     requestDate: '18.04.2023',
-    status: 'rejected',
+    remark: 'rejected',
   },
   {
     id: 'ZC782PLMKJ41923',
@@ -754,7 +839,7 @@ const details = [
     customerEmail: 'tayoadekunle@example.com',
     amount: 300,
     requestDate: '17.04.2023',
-    status: 'approved',
+    remark: 'approved',
   },
   {
     id: 'FG128MNBVC56321',
@@ -763,7 +848,9 @@ const details = [
     customerEmail: 'solabalogun@example.com',
     amount: 50,
     requestDate: '16.04.2023',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
   {
     id: 'RT345LKJH97852',
@@ -772,7 +859,7 @@ const details = [
     customerEmail: 'kemiola@example.com',
     amount: 120,
     requestDate: '15.04.2023',
-    status: 'rejected',
+    remark: 'rejected',
   },
   {
     id: 'XC239PLMKJ67543',
@@ -781,7 +868,7 @@ const details = [
     customerEmail: 'tobiadejumo@example.com',
     amount: 90,
     requestDate: '14.04.2023',
-    status: 'approved',
+    remark: 'approved',
   },
   {
     id: 'BH349QWERTY24578',
@@ -790,7 +877,9 @@ const details = [
     customerEmail: 'tosinogunlade@example.com',
     amount: 200,
     requestDate: '19.04.2023',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
   {
     id: 'QW098LKJH67890',
@@ -799,7 +888,7 @@ const details = [
     customerEmail: 'funmiadegbite@example.com',
     amount: 150,
     requestDate: '18.04.2023',
-    status: 'rejected',
+    remark: 'rejected',
   },
   {
     id: 'ZC782PLMKJ41923',
@@ -808,7 +897,7 @@ const details = [
     customerEmail: 'tayoadekunle@example.com',
     amount: 300,
     requestDate: '17.04.2023',
-    status: 'approved',
+    remark: 'approved',
   },
   {
     id: 'FG128MNBVC56321',
@@ -817,7 +906,9 @@ const details = [
     customerEmail: 'solabalogun@example.com',
     amount: 50,
     requestDate: '16.04.2023',
+    failed: 1,
     status: 'pending',
+    remark: 'pending',
   },
   {
     id: 'RT345LKJH97852',
@@ -826,7 +917,7 @@ const details = [
     customerEmail: 'kemiola@example.com',
     amount: 120,
     requestDate: '15.04.2023',
-    status: 'rejected',
+    remark: 'rejected',
   },
   {
     id: 'XC239PLMKJ67543',
@@ -835,7 +926,7 @@ const details = [
     customerEmail: 'tobiadejumo@example.com',
     amount: 90,
     requestDate: '14.04.2023',
-    status: 'approved',
+    remark: 'approved',
   },
 ];
 

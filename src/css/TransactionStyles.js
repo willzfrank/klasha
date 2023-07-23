@@ -8,16 +8,15 @@ export const TransactionTable = styled.section`
   }
 
   .transaction__table {
-    border: 1px solid #f0f0f0;
-    border-radius: 8px;
-
     .TransactionTitle {
       font-family: 'Open Sans', sans-serif;
       font-size: 18px;
       font-weight: 500;
       line-height: 23px;
       letter-spacing: -0.02em;
-      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       padding: 12px 0 24px 12px;
       border-bottom: 1px solid #f0f0f0;
     }
@@ -65,9 +64,10 @@ export const TransactionTable = styled.section`
     }
 
     .left__input {
-      border: 1px solid #ededed;
+      border: 1px solid #082e88;
       padding: 10px 15px;
       border-radius: 8px;
+
       @media (min-width: 320px) and (max-width: 767px) {
         width: 100%;
         display: flex;
@@ -77,6 +77,8 @@ export const TransactionTable = styled.section`
       input {
         border: none;
         outline: none;
+        background: inherit;
+
         @media (min-width: 320px) and (max-width: 767px) {
           width: 90%;
         }
@@ -86,7 +88,6 @@ export const TransactionTable = styled.section`
 `;
 
 export const HeaderCell = styled.th`
-  //styleName: Heading - General Sans/H6 - Small/Semi Bold;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -98,7 +99,9 @@ export const HeaderCell = styled.th`
 
 export const TableContainer = styled.section`
   overflow: scroll !important;
-
+  border-radius: 8px;
+  border: 1px solid black;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
   &::-webkit-scrollbar {
     display: none;
   }
@@ -123,7 +126,6 @@ export const TableContainer = styled.section`
     @media screen and (min-width: 320px) and (max-width: 767px) {
       margin-top: 2rem;
     }
-    border-radius: 4px;
 
     tbody {
       padding: 7px 13px;
